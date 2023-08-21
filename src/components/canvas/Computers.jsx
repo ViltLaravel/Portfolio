@@ -1,8 +1,21 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 import CanvasLoader from "../Loader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+
+
+// Create a DRACOLoader instance and configure it
+const dLoader = new DRACOLoader();
+dLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
+dLoader.setDecoderConfig({ type: 'js' });
+
+// Create a GLTFLoader instance and set the DRACOLoader
+const gltfLoader = new GLTFLoader();
+gltfLoader.setDRACOLoader(dLoader);
+
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
