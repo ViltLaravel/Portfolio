@@ -25,12 +25,17 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/yaramay.png";
 import tesla from "./company/bisu.png";
+import bread from "./company/bread.png";
 
 import carrent from "./thesis.png";
 import jobit from "./ojt.png";
 import tripguide from "./ofw.png";
+import task from "./projects/task-management.png";
+import tabang from "./projects/tabang-ofw.png";
 
 export {
+  tabang,
+  task,
   logo,
   backend,
   creator,
@@ -59,4 +64,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  bread,
 };

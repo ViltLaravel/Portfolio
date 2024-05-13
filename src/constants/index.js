@@ -15,14 +15,14 @@ import {
     git,
     figma,
     docker,
-    meta,
     starbucks,
     tesla,
-    shopify,
     carrent,
     jobit,
-    tripguide,
     threejs,
+    bread,
+    task,
+    tabang,
   } from "../assets";
   
   export const navLinks = [
@@ -133,7 +133,7 @@ import {
       company_name: "Bohol Isand State University",
       icon: tesla,
       iconBg: "#96B6C5",
-      date: "Jun 2022 - Sep 2022",
+      date: "June 2022 - September 2022",
       points: [
         "Developing and maintaining desktop applications using Vb.net and other related technologies.",
         "Implementing responsive design and ensuring user-friendy interface.",
@@ -145,11 +145,23 @@ import {
       company_name: "Bohol Island State University",
       icon: tesla,
       iconBg: "#96B6C5",
-      date: "Jan 2023 - May 2023",
+      date: "January 2023 - May 2023",
       points: [
         "Developing and maintaining web applications using Laravel and other related technologies.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Junior Software Engineer (Full-time)",
+      company_name: "Bread's Edge Corporation",
+      icon: bread,
+      iconBg: "#96B6C5",
+      date: "August 2023 - April 2024",
+      points: [
+        "Creating and managing the company's website with Laravel and associated technologies.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Taking part in code reviews and offering helpful input to fellow developers.",
       ],
     },
   ];
@@ -183,20 +195,24 @@ import {
   
   const projects = [
     {
-      name: "e-trabaho",
+      name: "E-trabaho - Empowering Freelancers, Connecting Opportunities",
       description:
-        "e-trabaho is a dynamic freelancing platform designed to empower both freelancers and clients. Whether you're a creative genius, a technical virtuoso, or a business visionary, e-trabaho opens doors to a world of possibilities.",
+        "E-trabaho is a dynamic freelancing platform designed to empower both freelancers and clients. Whether you're a creative genius, a technical virtuoso, or a business visionary, e-trabaho opens doors to a world of possibilities.",
       tags: [
         {
-          name: "laravel",
+          name: "Laravel Framework",
           color: "blue-text-gradient",
         },
         {
-          name: "mysql",
+          name: "MySql Database",
           color: "green-text-gradient",
         },
         {
-          name: "javascript",
+          name: "Bootstrap Css",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Ajax",
           color: "pink-text-gradient",
         },
       ],
@@ -204,20 +220,24 @@ import {
       source_code_link: "https://github.com/ViltLaravel/laravel-Thesis",
     },
     {
-      name: "Profiling System",
+      name: "Profiling Management System - Streamlining Data Management",
       description:
         "The DHMIT Staff Information Management System is an advanced desktop application that simplifies the collection, organization, and backup of essential personal information for your department's staff and also it's secured.",
       tags: [
         {
-          name: "vb.net",
+          name: "Vb.Net",
           color: "blue-text-gradient",
         },
         {
-          name: "mysql",
+          name: "MySql Database",
           color: "green-text-gradient",
         },
         {
-          name: "crystal report",
+          name: "XAMPP",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Crystal Report",
           color: "pink-text-gradient",
         },
       ],
@@ -225,25 +245,62 @@ import {
       source_code_link: "https://github.com/ViltLaravel/Profiling-VB.net/tree/main/DHMIT_SYSTEM",
     },
     {
-      name: "tabang ofw",
+      name: "Tabang OFW - A platform for Filipino emergency assistance and support.",
       description:
         "Tabang OFW is a powerful web platform designed to address the needs of Overseas Filipino Workers who face abuse and adversity while working in foreign countries. This comprehensive solution offers a range of resources to empower OFWs.",
       tags: [
         {
-          name: "html",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "css",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "figma",
+          name: "Figma",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "GitHub",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "VsCode",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/ViltLaravel/tabangOFW",
+      image: tabang,
+      source_code_link: "https://viltlaravel.github.io/tabangOFW/",
+    },
+    {
+      name: "RESTful Task Management System",
+      description:
+        "Our task management system integrates Laravel's RESTful API with Vue 3 Composition API for a seamless blend of backend reliability and frontend interactivity. It streamlines task creation, assignment, and tracking while ensuring a responsive and intuitive user experience.",
+      tags: [
+        {
+          name: "Laravel Framework",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Vue Js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind Css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Typescript",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: task,
+      source_code_link: "https://todo-fe-rust.vercel.app/",
     },
   ];
   
