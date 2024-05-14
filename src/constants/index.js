@@ -302,6 +302,31 @@ import {
       image: task,
       source_code_link: "https://todo-fe-rust.vercel.app/",
     },
+    {
+      name: "KAWAII - Discover Your Next Anime",
+      description:
+        "KAWAII - Discover Your Next Anime is a user-friendly platform that helps anime enthusiasts find their next favorite series. With advanced search features and personalized recommendations, KAWAII makes exploring new anime easy and enjoyable for both seasoned fans and newcomers",
+      tags: [
+        {
+          name: "RESTful API",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Vue Js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind Css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Typescript",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: task,
+      source_code_link: "https://anime-finder-lyart.vercel.app/",
+    },
   ];
   
   export { services, technologies, experiences, testimonials, projects };

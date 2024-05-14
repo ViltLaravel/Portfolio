@@ -32,8 +32,10 @@ import jobit from "./ojt.png";
 import tripguide from "./ofw.png";
 import task from "./projects/task-management.png";
 import tabang from "./projects/tabang-ofw.png";
+import kawaii from "./projects/kawaii-animeFinder.png"
 
 export {
+  kawaii,
   tabang,
   task,
   logo,
