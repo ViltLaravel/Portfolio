@@ -23,6 +23,7 @@ import {
     bread,
     task,
     tabang,
+    kawaii,
   } from "../assets";
   
   export const navLinks = [
@@ -324,7 +325,7 @@ import {
           color: "orange-text-gradient",
         },
       ],
-      image: task,
+      image: kawaii,
       source_code_link: "https://anime-finder-lyart.vercel.app/",
     },
   ];
