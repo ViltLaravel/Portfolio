@@ -33,8 +33,10 @@ import tripguide from "./ofw.png";
 import task from "./projects/task-management.png";
 import tabang from "./projects/tabang-ofw.png";
 import kawaii from "./projects/kawaii-animeFinder.png"
+import jokaii from "./projects/jokie.png"
 
 export {
+  jokaii,
   kawaii,
   tabang,
   task,

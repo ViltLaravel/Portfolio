@@ -24,6 +24,7 @@ import {
     task,
     tabang,
     kawaii,
+    jokaii,
   } from "../assets";
   
   export const navLinks = [
@@ -327,6 +328,31 @@ import {
       ],
       image: kawaii,
       source_code_link: "https://anime-finder-lyart.vercel.app/",
+    },
+    {
+      name: "JOKIE - Your Random Programming Joke Generator",
+      description:
+        "JOKIE is your go-to random programming joke generator, perfect for a quick laugh during coding sessions. With a vast library of jokes, JOKIE ensures you always have a fresh quip to share with fellow developers. Add some humor to your day with JOKIE!",
+      tags: [
+        {
+          name: "React Js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "RESTful API",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind Css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Typescript",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: jokaii,
+      source_code_link: "https://jokai-ivory.vercel.app/",
     },
   ];
   
