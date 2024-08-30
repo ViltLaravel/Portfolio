@@ -26,6 +26,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/yaramay.png";
 import tesla from "./company/bisu.png";
 import bread from "./company/bread.png";
+import koda from "./company/KODA.png";
 
 import carrent from "./thesis.png";
 import jobit from "./ojt.png";
@@ -69,4 +70,5 @@ export {
   jobit,
   tripguide,
   bread,
+  koda,
 };
