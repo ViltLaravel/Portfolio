@@ -45,15 +45,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front-end Developer",
     icon: web,
   },
   {
-    title: "Laravel Developer",
+    title: "Back-end Developer",
     icon: mobile,
   },
   {
-    title: "Software Developer",
+    title: "Software Engineer",
     icon: backend,
   },
   {
@@ -133,7 +133,7 @@ const experiences = [
   },
   {
     title: "Software Developer (Internship)",
-    company_name: "Bohol Isand State University",
+    company_name: "Bohol Island State University",
     icon: tesla,
     iconBg: "#96B6C5",
     date: "June 2022 - September 2022",
@@ -188,7 +188,8 @@ const testimonials = [
     name: "Maria Nilda Jaspe",
     designation: "Manager",
     company: "PESO Department",
-    image: "https://tse4.mm.bing.net/th?id=OIP.0A1RSeVHV4YfoDGR2jUvHwHaHa&pid=Api&P=0&h=180",
+    image:
+      "https://tse4.mm.bing.net/th?id=OIP.0A1RSeVHV4YfoDGR2jUvHwHaHa&pid=Api&P=0&h=180",
   },
   {
     testimonial:
@@ -196,7 +197,8 @@ const testimonials = [
     name: "Ferdz Sab",
     designation: "CEO",
     company: "Yaramay Corp",
-    image: "https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png",
+    image:
+      "https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png",
   },
   {
     testimonial:
@@ -204,7 +206,8 @@ const testimonials = [
     name: "Joel Piollo",
     designation: "Instructor",
     company: "Bohol Island State University",
-    image: "https://www.366icons.com/media/01/profile-avatar-account-icon-16699.png",
+    image:
+      "https://www.366icons.com/media/01/profile-avatar-account-icon-16699.png",
   },
 ];
 
@@ -257,7 +260,8 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/ViltLaravel/Profiling-VB.net/tree/main/DHMIT_SYSTEM",
+    source_code_link:
+      "https://github.com/ViltLaravel/Profiling-VB.net/tree/main/DHMIT_SYSTEM",
   },
   {
     name: "Tabang OFW - A platform for Filipino emergency assistance and support.",
