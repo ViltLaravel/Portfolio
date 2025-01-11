@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <ToastContainer />
       </div>
     </BrowserRouter>
   );
