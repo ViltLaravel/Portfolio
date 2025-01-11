@@ -4,14 +4,12 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-
+import { motion, useAnimation, useInView } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
-
+import { useEffect, useRef } from "react";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -58,9 +56,41 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("animate");
+    }
+  }, [isInView, controls]);
+
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        ref={ref}
+        variants={{
+          initial: {
+            x: -100,
+            opacity: 0,
+          },
+          animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+              type: "spring",
+              delay: 0.3,
+              duration: 0.8,
+              stiffness: 100,
+              damping: 20,
+            },
+          },
+        }}
+        initial="initial"
+        animate={controls}
+        exit="initial"
+      >
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>

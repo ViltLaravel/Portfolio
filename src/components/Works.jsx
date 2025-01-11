@@ -1,24 +1,73 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
-import { motion } from "framer-motion";
-
+import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn } from "../utils/motion";
 import { ProjectItem } from "./canvas";
 
 const Works = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("animate");
+    }
+  }, [isInView, controls]);
+
   return (
     <div>
-      <motion.div variants={fadeIn("left", "spring", 0.1, 1)}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+      <motion.div
+        variants={{
+          initial: {
+            x: -100,
+            opacity: 0,
+          },
+          animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+              type: "spring",
+              delay: 0.3,
+              duration: 0.8,
+              stiffness: 100,
+              damping: 20,
+            },
+          },
+        }}
+        initial="initial"
+        animate={controls}
+        exit="initial"
+      >
+        <p className={`${styles.sectionSubText} `}>My works</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div ref={ref} className="w-full flex">
         <motion.p
-          variants={fadeIn("left", "spring", 0.1, 1)}
+          variants={{
+            initial: {
+              x: 100,
+              opacity: 0,
+            },
+            animate: {
+              x: 0,
+              opacity: 1,
+              transition: {
+                type: "spring",
+                delay: 0.3,
+                duration: 0.8,
+                stiffness: 100,
+                damping: 20,
+              },
+            },
+          }}
+          initial="initial"
+          animate={controls}
+          exit="initial"
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
