@@ -35,8 +35,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center pt-48">
-        <img src="/hero/hero.png" alt="hero-img" />
+      <div className="w-full flex justify-center lg:justify-end items-center pt-48 lg:pt-28 lg:pr-20 lg:pb-10 xl:pr-36">
+        <img src="/hero/hero-1.png" alt="hero-img" />
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

@@ -1,4 +1,5 @@
-import React, { Suspense } from "react";
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/no-unknown-property */
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -16,7 +17,7 @@ const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      frameloop='demand'
+      frameloop="demand"
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{

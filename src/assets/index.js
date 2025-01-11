@@ -20,6 +20,11 @@ import redux from "./tech/laravel.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/mysql.png";
 import threejs from "./tech/nuxt.png";
+import nextjs from "./new-tech/nextjs.png";
+import gitHub from "./new-tech/github.png";
+import react from "./new-tech/react.png";
+import ts from "./new-tech/typescript.jpg";
+import reduxState from "./new-tech/redux.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -33,8 +38,8 @@ import jobit from "./ojt.png";
 import tripguide from "./ofw.png";
 import task from "./projects/task-management.png";
 import tabang from "./projects/tabang-ofw.png";
-import kawaii from "./projects/kawaii-animeFinder.png"
-import jokaii from "./projects/jokie.png"
+import kawaii from "./projects/kawaii-animeFinder.png";
+import jokaii from "./projects/jokie.png";
 
 export {
   jokaii,
@@ -71,4 +76,9 @@ export {
   tripguide,
   bread,
   koda,
+  reduxState,
+  ts,
+  react,
+  gitHub,
+  nextjs,
 };

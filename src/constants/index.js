@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -26,7 +22,17 @@ import {
   kawaii,
   jokaii,
   koda,
+  ts,
+  nextjs,
+  react,
+  reduxState,
+  gitHub,
 } from "../assets";
+
+import skills_1 from "/skills/skill-1.png";
+import skills_2 from "/skills/skill-2.png";
+import skills_3 from "/skills/skill-3.png";
+import skills_4 from "/skills/skill-4.png";
 
 export const navLinks = [
   {
@@ -46,19 +52,19 @@ export const navLinks = [
 const services = [
   {
     title: "Front-end Developer",
-    icon: web,
+    icon: skills_1,
   },
   {
     title: "Back-end Developer",
-    icon: mobile,
+    icon: skills_2,
   },
   {
-    title: "Software Engineer",
-    icon: backend,
+    title: "Professional Software Engineer",
+    icon: skills_3,
   },
   {
     title: "UI/UX Designer",
-    icon: creator,
+    icon: skills_4,
   },
 ];
 
@@ -114,6 +120,26 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "ts",
+    icon: ts,
+  },
+  {
+    name: "nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "react",
+    icon: react,
+  },
+  {
+    name: "redux",
+    icon: reduxState,
+  },
+  {
+    name: "github",
+    icon: gitHub,
   },
 ];
 
