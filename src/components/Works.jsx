@@ -1,84 +1,24 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react-refresh/only-export-components */
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-};
+import { fadeIn } from "../utils/motion";
+import { ProjectItem } from "./canvas";
 
 const Works = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <div>
+      <motion.div variants={fadeIn("left", "spring", 0.1, 1)}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("left", "spring", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -89,13 +29,49 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="md:mt-20 mt-5 flex flex-wrap justify-center items-start gap-5 md:gap-4">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <motion.div
+            variants={{
+              initial: {
+                y: 100,
+                opacity: 0,
+                scale: 1,
+              },
+              hover: {
+                scale: 1.1,
+              },
+              show: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                  type: "spring",
+                  delay: 0.3,
+                  duration: 0.8,
+                  stiffness: 100,
+                  damping: 20,
+                },
+              },
+            }}
+            initial="initial"
+            animate="show"
+            exit="initial"
+            whileHover="hover"
+            key={index}
+            className="p-2"
+          >
+            <ProjectItem
+              name={project.name}
+              description={project.description}
+              tags={project.tags}
+              image={project.image}
+              source_code_link={project.source_code_link}
+            />
+          </motion.div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

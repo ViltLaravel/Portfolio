@@ -44,6 +44,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -219,7 +223,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Nicole's unwavering dedication and tireless work ethic make her a standout developer in every sense.",
+      "Nicole's unwavering dedication and tireless work ethic make him a standout developer in every sense.",
     name: "Ferdz Sab",
     designation: "CEO",
     company: "Yaramay Corp",
