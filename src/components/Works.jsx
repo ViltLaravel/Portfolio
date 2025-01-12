@@ -83,27 +83,27 @@ const Works = () => {
           <motion.div
             variants={{
               initial: {
-                y: 100,
+                x: 100,
                 opacity: 0,
                 scale: 1,
               },
               hover: {
                 scale: 1.1,
               },
-              show: {
-                y: 0,
+              animate: {
+                x: 0,
                 opacity: 1,
                 transition: {
                   type: "spring",
-                  delay: 0.3,
-                  duration: 0.8,
+                  delay: index * 1.2,
+                  duration: 1.2,
                   stiffness: 100,
                   damping: 20,
                 },
               },
             }}
             initial="initial"
-            animate="show"
+            animate={controls}
             exit="initial"
             whileHover="hover"
             key={index}

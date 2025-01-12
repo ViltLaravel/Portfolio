@@ -19,7 +19,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Nicole</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <div className={`${styles.heroSubText} mt-2 text-white-100`}>
             <Typewriter
               options={{
                 strings: [
@@ -31,7 +31,7 @@ const Hero = () => {
                 loop: true,
               }}
             />
-          </p>
+          </div>
         </div>
       </div>
 
