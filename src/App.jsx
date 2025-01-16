@@ -35,7 +35,10 @@ const App = () => {
           property="og:description"
           content="Explore Nicole's software engineering projects and skills."
         />
-        <meta property="og:image" content="/seo/img-hero.png" />
+        <meta
+          property="og:image"
+          content="https://nicole-amoguis-portfolio.vercel.app/seo/img-hero.png"
+        />
         <meta
           property="og:url"
           content="https://nicole-amoguis-portfolio.vercel.app"
@@ -49,7 +52,10 @@ const App = () => {
           name="twitter:description"
           content="Discover Nicole's skills in mobile and web development."
         />
-        <meta name="twitter:image" content="/seo/img-hero.png" />
+        <meta
+          name="twitter:image"
+          content="https://nicole-amoguis-portfolio.vercel.app/seo/img-hero.png"
+        />
       </Helmet>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
