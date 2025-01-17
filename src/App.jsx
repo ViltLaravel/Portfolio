@@ -39,10 +39,7 @@ const App = () => {
           property="og:image"
           content="https://i.pinimg.com/736x/5f/f7/3d/5ff73d34334f4441cc02ee33b6ecd16f.jpg"
         />
-        <meta
-          property="og:url"
-          content="https://nicole-amoguis-portfolio.vercel.app"
-        />
+        <meta property="og:url" content="https://www.liqwidcode.site/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
