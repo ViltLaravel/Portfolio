@@ -265,7 +265,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/ViltLaravel/laravel-Thesis",
+    source_code_link: "https://etrabaho.liqwidcode.site/",
   },
   {
     name: "Profiling Management System - Streamlining Data Management",
