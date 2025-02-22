@@ -374,7 +374,7 @@ const projects = [
       },
     ],
     image: kawaii,
-    source_code_link: "https://anime-finder-lyart.vercel.app/",
+    source_code_link: "https://kawaii-anime-finder.vercel.app/",
   },
   {
     name: "JOKIE - Your Random Programming Joke Generator",
