@@ -13,7 +13,6 @@ import {
   docker,
   starbucks,
   tesla,
-  carrent,
   jobit,
   threejs,
   bread,
@@ -27,6 +26,7 @@ import {
   react,
   reduxState,
   gitHub,
+  beachday,
 } from "../assets";
 
 import skills_1 from "/skills/skill-1.png";
@@ -243,29 +243,25 @@ const testimonials = [
 
 const projects = [
   {
-    name: "E-trabaho - Empowering Freelancers, Connecting Opportunities",
+    name: "BeachDay",
     description:
-      "E-trabaho is a dynamic freelancing platform designed to empower both freelancers and clients. Whether you're a creative genius, a technical virtuoso, or a business visionary, e-trabaho opens doors to a world of possibilities.",
+      "At beachday, we know how challenging it can be to manage daily operations while focusing on growth. That's why we provide highly qualified Operations Strategists to handle essential tasks, allowing clients to maximize their impact. With a commitment to efficiency and excellence, beachday helps businesses Surf through tasks, soak up more free time by ensuring seamless workflows and enhanced productivity.",
     tags: [
       {
-        name: "Laravel Framework",
+        name: "NextJs",
         color: "blue-text-gradient",
       },
       {
-        name: "MySql Database",
+        name: "Tailwind Css",
         color: "green-text-gradient",
       },
       {
-        name: "Bootstrap Css",
+        name: "Framer Motion",
         color: "orange-text-gradient",
       },
-      {
-        name: "Ajax",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://etrabaho.liqwidcode.site/",
+    image: beachday,
+    source_code_link: "https://www.beachday.co/home",
   },
   {
     name: "Profiling Management System - Streamlining Data Management",

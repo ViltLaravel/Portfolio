@@ -41,6 +41,8 @@ import tabang from "./projects/tabang-ofw.png";
 import kawaii from "./projects/kawaii-animeFinder.png";
 import jokaii from "./projects/jokie.png";
 
+import beachday from "./client/beachday.png";
+
 export {
   jokaii,
   kawaii,
@@ -81,4 +83,5 @@ export {
   react,
   gitHub,
   nextjs,
+  beachday,
 };
