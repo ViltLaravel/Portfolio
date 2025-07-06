@@ -8,6 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { toast } from "react-toastify";
 
+const serviceId = import.meta.env.VITE_APP_SERVICE_ID;
+const templateId = import.meta.env.VITE_APP_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_APP_PUBLIC_KEY;
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -15,12 +19,6 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
-  // oI0eTOcVQgUcRAmMj
-
-  // template_i9dk1qp
-
-  // service_x6lp2sj
 
   const [loading, setLoading] = useState(false);
 
@@ -40,8 +38,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_x6lp2sj",
-        "template_i9dk1qp",
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: "Nicole Amoguis",
@@ -49,7 +47,7 @@ const Contact = () => {
           to_email: "nicoleamoguis15@gmail.com",
           message: form.message,
         },
-        "QDJnJTc-hqX287t8J"
+        publicKey
       )
       .then(
         () => {

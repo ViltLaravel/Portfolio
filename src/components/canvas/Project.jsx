@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-// import { motion } from "framer-motion";
-// import { Tilt } from "react-tilt";
 import { github } from "../../assets";
 
 export default function ProjectItem({
@@ -33,7 +31,9 @@ export default function ProjectItem({
 
       <div className="mt-5">
         <h3 className="text-white font-bold text-lg md:text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <p className="mt-2 text-secondary text-[14px] h-full min-h-[210px]">
+          {description}
+        </p>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">

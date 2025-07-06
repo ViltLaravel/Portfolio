@@ -11,13 +11,9 @@ import {
   git,
   figma,
   docker,
-  starbucks,
   tesla,
-  jobit,
   threejs,
   bread,
-  task,
-  tabang,
   kawaii,
   jokaii,
   koda,
@@ -149,19 +145,6 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Web Developer (Part-time)",
-    company_name: "Yaramay",
-    icon: starbucks,
-    iconBg: "#445069",
-    date: "September 2022 - October 2022",
-    points: [
-      "Developing and maintaining web applications using Laravel and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Software Developer (Internship)",
     company_name: "Bohol Island State University",
     icon: tesla,
@@ -170,18 +153,6 @@ const experiences = [
     points: [
       "Developing and maintaining desktop applications using Vb.net and other related technologies.",
       "Implementing responsive design and ensuring user-friendy interface.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer (Thesis)",
-    company_name: "Bohol Island State University",
-    icon: tesla,
-    iconBg: "#96B6C5",
-    date: "January 2023 - May 2023",
-    points: [
-      "Developing and maintaining web applications using Laravel and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
@@ -259,98 +230,26 @@ const projects = [
         name: "Framer Motion",
         color: "orange-text-gradient",
       },
+      {
+        name: "Node Mailer",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
     ],
     image: beachday,
     source_code_link: "https://www.beachday.co/home",
   },
   {
-    name: "Profiling Management System - Streamlining Data Management",
+    name: "Kawaii",
     description:
-      "The DHMIT Staff Information Management System is an advanced desktop application that simplifies the collection, organization, and backup of essential personal information for your department's staff and also it's secured.",
-    tags: [
-      {
-        name: "Vb.Net",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "MySql Database",
-        color: "green-text-gradient",
-      },
-      {
-        name: "XAMPP",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Crystal Report",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link:
-      "https://github.com/ViltLaravel/Profiling-VB.net/tree/main/DHMIT_SYSTEM",
-  },
-  {
-    name: "Tabang OFW - A platform for Filipino emergency assistance and support.",
-    description:
-      "Tabang OFW is a powerful web platform designed to address the needs of Overseas Filipino Workers who face abuse and adversity while working in foreign countries. This comprehensive solution offers a range of resources to empower OFWs.",
-    tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Figma",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "GitHub",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "VsCode",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Javascript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tabang,
-    source_code_link: "https://viltlaravel.github.io/tabangOFW/",
-  },
-  {
-    name: "RESTful Task Management System",
-    description:
-      "Our task management system integrates Laravel's RESTful API with Vue 3 Composition API for a seamless blend of backend reliability and frontend interactivity. It streamlines task creation, assignment, and tracking while ensuring a responsive and intuitive user experience.",
-    tags: [
-      {
-        name: "Laravel Framework",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Vue Js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind Css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: task,
-    source_code_link: "https://todo-fe-rust.vercel.app/",
-  },
-  {
-    name: "KAWAII - Discover Your Next Anime",
-    description:
-      "KAWAII - Discover Your Next Anime is a user-friendly platform that helps anime enthusiasts find their next favorite series. With advanced search features and personalized recommendations, KAWAII makes exploring new anime easy and enjoyable for both seasoned fans and newcomers",
+      "Kawaii – Discover Your Next Anime is a user-friendly platform designed to help anime enthusiasts find their next favorite series. Featuring advanced search tools and personalized recommendations, KAWAII makes discovering new anime simple, fun, and rewarding. Whether you're a long-time fan or just starting out, KAWAII enhances your anime journey every step of the way.",
     tags: [
       {
         name: "RESTful API",
@@ -373,9 +272,9 @@ const projects = [
     source_code_link: "https://kawaii-anime-finder.vercel.app/",
   },
   {
-    name: "JOKIE - Your Random Programming Joke Generator",
+    name: "Jokiie",
     description:
-      "JOKIE is your go-to random programming joke generator, perfect for a quick laugh during coding sessions. With a vast library of jokes, JOKIE ensures you always have a fresh quip to share with fellow developers. Add some humor to your day with JOKIE!",
+      "Jokiie is your go-to random programming joke generator, ideal for a quick laugh during coding sessions. With a vast library of clever tech jokes, Jokiie keeps the humor flowing and the mood light. Share a quip with fellow developers or enjoy a solo chuckle—Jokiie brings fun into your daily coding routine.",
     tags: [
       {
         name: "React Js",
