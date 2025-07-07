@@ -36,38 +36,44 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        serviceId,
-        templateId,
-        {
-          from_name: form.name,
-          to_name: "Nicole Amoguis",
-          from_email: form.email,
-          to_email: "nicoleamoguis15@gmail.com",
-          message: form.message,
-        },
-        publicKey
-      )
-      .then(
-        () => {
-          setLoading(false);
-          toast.success(
-            "Thank you. I will get back to you as soon as possible."
-          );
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          toast.error("Ahh, something went wrong. Please try again.");
-        }
+    if (!form.name || !form.email || !form.message) {
+      toast.warning(
+        "Oops! Looks like you missed a required field. Please fill it in to keep going."
       );
+      setLoading(false);
+    } else {
+      emailjs
+        .send(
+          serviceId,
+          templateId,
+          {
+            from_name: form.name,
+            to_name: "Nicole Amoguis",
+            from_email: form.email,
+            to_email: "nicoleamoguis15@gmail.com",
+            message: form.message,
+          },
+          publicKey
+        )
+        .then(
+          () => {
+            setLoading(false);
+            toast.success(
+              "Thank you. I will get back to you as soon as possible."
+            );
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.error(error);
+            toast.error("Ahh, something went wrong. Please try again.");
+          }
+        );
+    }
   };
 
   return (
