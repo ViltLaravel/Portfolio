@@ -1,27 +1,19 @@
 import {
-  javascript,
+  koda,
+  zongha,
   typescript,
   html,
-  css,
-  reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
-  tesla,
-  threejs,
-  bread,
-  kawaii,
-  jokaii,
-  koda,
-  ts,
   nextjs,
   react,
-  reduxState,
-  gitHub,
+  laravel,
+  postgres,
+  kawaii,
+  jokaii,
   beachday,
 } from "../assets";
 
@@ -51,133 +43,98 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Front-end Developer",
+    title: "Problem Solver",
     icon: skills_1,
   },
   {
-    title: "Back-end Developer",
+    title: "Builder",
     icon: skills_2,
   },
   {
-    title: "Professional Software Engineer",
+    title: "Collaborator",
     icon: skills_3,
   },
   {
-    title: "UI/UX Designer",
+    title: "Learner",
     icon: skills_4,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    name: "docker",
+    icon: docker,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-  {
-    name: "ts",
-    icon: ts,
-  },
-  {
     name: "nextjs",
     icon: nextjs,
   },
   {
-    name: "react",
+    name: "React JS",
     icon: react,
   },
   {
-    name: "redux",
-    icon: reduxState,
+    name: "Redux Toolkit",
+    icon: redux,
   },
   {
-    name: "github",
-    icon: gitHub,
+    name: "TypeScript",
+    icon: typescript,
+  },
+
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "laravel",
+    icon: laravel,
+  },
+  {
+    name: "postgres",
+    icon: postgres,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
   },
 ];
 
 const experiences = [
   {
-    title: "Software Developer (Internship)",
-    company_name: "Bohol Island State University",
-    icon: tesla,
-    iconBg: "#96B6C5",
-    date: "June 2022 - September 2022",
-    points: [
-      "Developing and maintaining desktop applications using Vb.net and other related technologies.",
-      "Implementing responsive design and ensuring user-friendy interface.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Junior Software Engineer (Full-time)",
-    company_name: "Bread's Edge Corporation",
-    icon: bread,
-    iconBg: "#96B6C5",
-    date: "August 2023 - April 2024",
-    points: [
-      "Creating and managing the company's website with Laravel and associated technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Taking part in code reviews and offering helpful input to fellow developers.",
-    ],
-  },
-  {
-    title: "Software Engineer (Full-time)",
+    title: "Software Engineer - Onsite (Full-time)",
     company_name: "KODA Kollectiv Inc.",
     icon: koda,
     iconBg: "#F5F5F5",
     date: "June 2024 - Present",
     points: [
-      "I'm working on different projects using different languages based on the project's requirements.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Our best work comes from understanding our clients and ensuring their satisfaction.",
+      "Develop and maintain scalable web and mobile applications, ensuring high performance and seamless user experience.",
+      "Collaborate with cross-functional teams to design, implement, and optimize software solutions that meet business and user needs.",
+      "Utilize modern technologies and frameworks to build efficient, maintainable, and secure applications.",
+      "Troubleshoot and debug software issues, improving system reliability and performance.",
+      "Continuously learn and adapt to emerging technologies to enhance development processes and deliver innovative solutions.",
+    ],
+  },
+  {
+    title: "Junior Software Engineer Remote (Full-time)",
+    company_name: "Zongha Technologies",
+    icon: zongha,
+    iconBg: "#000000",
+    date: "June 2023 - May 2024",
+    points: [
+      "Develop and maintain web and mobile applications, ensuring optimal functionality, performance, and scalability.",
+      " Collaborate with the team to implement new features, resolve bugs, and enhance code efficiency.",
+      "Leverage modern frameworks and technologies to build secure, maintainable, and high-quality software solutions.",
+      "Effectively manage time to meet project deadlines while balancing other responsibilities.",
+      "Stay proactive in learning, keeping up with industry trends to refine development skills and best practices.",
     ],
   },
 ];

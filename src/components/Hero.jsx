@@ -1,12 +1,68 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import Typewriter from "typewriter-effect";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadFull } from "tsparticles";
 
 const Hero = () => {
+  const containerRef = useRef(null),
+    [init, setInit] = useState(false);
+
+  useEffect(() => {
+    if (init) {
+      return;
+    }
+
+    initParticlesEngine(async (engine) => {
+      await loadFull(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, [init]);
+
+  const particlesLoaded = useCallback(
+      (container) => {
+        containerRef.current = container;
+
+        window.particlesContainer = container;
+      },
+      [containerRef]
+    ),
+    options = useMemo(
+      () => ({
+        fullScreen: {
+          zIndex: -1,
+        },
+        background: {
+          color: "transparent",
+        },
+        particles: {
+          number: {
+            value: 30,
+          },
+          links: {
+            enable: true,
+          },
+          move: {
+            enable: true,
+          },
+        },
+      }),
+      []
+    );
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
+      {init && (
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+      )}
+
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -23,9 +79,10 @@ const Hero = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Software Engineer",
-                  "Full Stack Web Developer",
-                  "UI/UX Designer",
+                  "Problem-Solver",
+                  "Builder",
+                  "Collaborator",
+                  "Learner",
                 ],
                 autoStart: true,
                 loop: true,

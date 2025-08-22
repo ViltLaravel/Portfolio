@@ -18,7 +18,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Helmet>
-        <title>Nicole N. Amoguis | Software Engineer Portfolio</title>
+        <title>Nicole N. Amoguis</title>
         <meta
           name="description"
           content="Welcome to the portfolio of Nicole N. Amoguis, a software engineer specializing in web and mobile development. Explore projects and skills."
