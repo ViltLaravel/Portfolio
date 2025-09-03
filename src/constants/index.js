@@ -15,6 +15,7 @@ import {
   kawaii,
   jokaii,
   beachday,
+  upwork,
 } from "../assets";
 
 import skills_1 from "/skills/skill-1.png";
@@ -121,6 +122,20 @@ const experiences = [
       "Utilize modern technologies and frameworks to build efficient, maintainable, and secure applications.",
       "Troubleshoot and debug software issues, improving system reliability and performance.",
       "Continuously learn and adapt to emerging technologies to enhance development processes and deliver innovative solutions.",
+    ],
+  },
+  {
+    title: "Frontend Developer - Remote (Freelance)",
+    company_name: "Upwork",
+    icon: upwork,
+    iconBg: "#08CB00",
+    date: "June 2022 - Present",
+    points: [
+      "Developed responsive web applications using React.js and Next.js.",
+      "Designed clean and user-friendly interfaces with Figma and Tailwind CSS.",
+      "Implemented SEO-friendly and optimized websites.",
+      "Integrated APIs and delivered accessible, maintainable code.",
+      "Focused on making clients satisfied with quality results and timely delivery.",
     ],
   },
   {

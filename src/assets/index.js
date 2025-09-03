@@ -19,6 +19,7 @@ import postgres from "./stack-logo/postgres.png";
 //company logo assets
 import zongha from "./company-logo/zongha.png";
 import koda from "./company-logo/koda.png";
+import upwork from "./company-logo/upwork.png";
 
 //project logo assets
 import kawaii from "./projects/kawaii.png";
@@ -26,6 +27,7 @@ import jokaii from "./projects/jokie.png";
 import beachday from "./client/beachday.png";
 
 export {
+  upwork,
   koda,
   zongha,
   laravel,
