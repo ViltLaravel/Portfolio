@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import Typewriter from "typewriter-effect";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
-const Hero = () => {
+export default function Hero() {
   const containerRef = useRef(null),
     [init, setInit] = useState(false);
 
@@ -54,7 +53,7 @@ const Hero = () => {
     );
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className="w-full flex flex-col justify-center xl:justify-start items-center gap-20 h-[calc(100vh-100px)] m-auto">
       {init && (
         <Particles
           id="tsparticles"
@@ -63,40 +62,26 @@ const Hero = () => {
         />
       )}
 
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
-
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Nicole</span>
-          </h1>
-          <div className={`${styles.heroSubText} mt-2 text-white-100`}>
-            <Typewriter
-              options={{
-                strings: [
-                  "Problem-Solver",
-                  "Builder",
-                  "Collaborator",
-                  "Learner",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
+      <div className="w-full flex justify-center flex-col gap-8 items-center">
+        <h1 className="text-[#915EFF] text-4xl md:text-6xl lg:text-7xl xl:text-9xl font-bold uppercase">
+          Nicole Amoguis
+        </h1>
+        <div className="text-white-100 text-xl xl:text-7xl font-semibold">
+          <Typewriter
+            options={{
+              strings: [
+                "Front-End Developer",
+                "Upwork-Freelancer",
+                "UI/UX Designer",
+                "2+ years of experience",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </div>
       </div>
-
-      <div className="w-full flex justify-center lg:justify-end items-center pt-48 lg:pt-28 lg:pr-20 lg:pb-10 xl:pr-36">
-        <img src="/hero/hero-1.png" alt="hero-img" />
-      </div>
-
-      <div className="absolute bottom-10 md:bottom-32 w-full flex justify-center items-center">
+      <div className="w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
@@ -115,6 +100,4 @@ const Hero = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
+}
