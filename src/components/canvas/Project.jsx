@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import { github } from "../../assets";
 
 export default function ProjectItem({
   name,
   description,
-  tags,
+  tools,
+  role,
   image,
   source_code_link,
 }) {
@@ -20,11 +20,20 @@ export default function ProjectItem({
             onClick={() => window.open(source_code_link, "_blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
-            <img
-              src={github}
-              alt="source code"
-              className="w-1/2 h-1/2 object-contain"
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+              />
+            </svg>
           </div>
         </div>
       </div>
@@ -36,8 +45,17 @@ export default function ProjectItem({
         </p>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag) => (
+      <div className="flex flex-wrap justify-start items-center gap-2">
+        Tools Used :
+        {tools.map((tag) => (
+          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+            #{tag.name}
+          </p>
+        ))}
+      </div>
+      <div className="flex flex-wrap justify-start items-center gap-2">
+        Role :
+        {role.map((tag) => (
           <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
             #{tag.name}
           </p>

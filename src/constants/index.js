@@ -12,8 +12,6 @@ import {
   react,
   laravel,
   postgres,
-  kawaii,
-  jokaii,
   beachday,
   upwork,
 } from "../assets";
@@ -44,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Problem Solver",
+    title: "Creative",
     icon: skills_1,
   },
   {
-    title: "Builder",
+    title: "Analytical",
     icon: skills_2,
   },
   {
-    title: "Collaborator",
+    title: "Adaptive",
     icon: skills_3,
   },
   {
-    title: "Learner",
+    title: "Reliable",
     icon: skills_4,
   },
 ];
@@ -129,7 +127,7 @@ const experiences = [
     company_name: "Upwork",
     icon: upwork,
     iconBg: "#08CB00",
-    date: "June 2022 - Present",
+    date: "June 2025 - Present",
     points: [
       "Developed responsive web applications using React.js and Next.js.",
       "Designed clean and user-friendly interfaces with Figma and Tailwind CSS.",
@@ -189,7 +187,7 @@ const projects = [
     name: "BeachDay",
     description:
       "At beachday, we know how challenging it can be to manage daily operations while focusing on growth. That's why we provide highly qualified Operations Strategists to handle essential tasks, allowing clients to maximize their impact. With a commitment to efficiency and excellence, beachday helps businesses Surf through tasks, soak up more free time by ensuring seamless workflows and enhanced productivity.",
-    tags: [
+    tools: [
       {
         name: "NextJs",
         color: "blue-text-gradient",
@@ -211,62 +209,22 @@ const projects = [
         color: "red-text-gradient",
       },
       {
+        name: "Restful API",
+        color: "orange-text-gradient",
+      },
+      {
         name: "Typescript",
         color: "pink-text-gradient",
       },
     ],
     image: beachday,
     source_code_link: "https://www.beachday.co/home",
-  },
-  {
-    name: "Kawaii",
-    description:
-      "Kawaii – Discover Your Next Anime is a user-friendly platform designed to help anime enthusiasts find their next favorite series. Featuring advanced search tools and personalized recommendations, KAWAII makes discovering new anime simple, fun, and rewarding. Whether you're a long-time fan or just starting out, KAWAII enhances your anime journey every step of the way.",
-    tags: [
+    role: [
       {
-        name: "RESTful API",
+        name: "Frontend Developer",
         color: "blue-text-gradient",
       },
-      {
-        name: "Vue Js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind Css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "orange-text-gradient",
-      },
     ],
-    image: kawaii,
-    source_code_link: "https://kawaii-anime-finder.vercel.app/",
-  },
-  {
-    name: "Jokiie",
-    description:
-      "Jokiie is your go-to random programming joke generator, ideal for a quick laugh during coding sessions. With a vast library of clever tech jokes, Jokiie keeps the humor flowing and the mood light. Share a quip with fellow developers or enjoy a solo chuckle—Jokiie brings fun into your daily coding routine.",
-    tags: [
-      {
-        name: "React Js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "RESTful API",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind Css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: jokaii,
-    source_code_link: "https://jokai-ivory.vercel.app/",
   },
 ];
 

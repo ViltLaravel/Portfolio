@@ -22,8 +22,6 @@ import koda from "./company-logo/koda.png";
 import upwork from "./company-logo/upwork.png";
 
 //project logo assets
-import kawaii from "./projects/kawaii.png";
-import jokaii from "./projects/jokie.png";
 import beachday from "./client/beachday.png";
 
 export {
@@ -42,8 +40,6 @@ export {
   react,
   redux,
   github,
-  jokaii,
-  kawaii,
   logo,
   menu,
   close,

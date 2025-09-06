@@ -70,15 +70,19 @@ const Works = () => {
           exit="initial"
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Here are some of my projects that showcase my development and design
+          skills. Each one includes a brief overview with links to the live
+          demo.
         </motion.p>
       </div>
 
-      <div className="md:mt-20 mt-5 flex flex-wrap justify-center items-start gap-5 md:gap-4">
+      <div
+        className={`md:mt-20 mt-5 flex flex-wrap gap-5 md:gap-4 ${
+          projects.length <= 1
+            ? "lg:justify-start justify-center items-start"
+            : "justify-center items-start"
+        }`}
+      >
         {projects.map((project, index) => (
           <motion.div
             variants={{
@@ -112,7 +116,8 @@ const Works = () => {
             <ProjectItem
               name={project.name}
               description={project.description}
-              tags={project.tags}
+              role={project.role}
+              tools={project.tools}
               image={project.image}
               source_code_link={project.source_code_link}
             />
