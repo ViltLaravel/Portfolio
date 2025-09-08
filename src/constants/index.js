@@ -14,6 +14,9 @@ import {
   postgres,
   beachday,
   upwork,
+  gemp,
+  fountaincrossing,
+  ehr,
 } from "../assets";
 
 import skills_1 from "/skills/skill-1.png";
@@ -184,9 +187,48 @@ const testimonials = [
 
 const projects = [
   {
+    name: "GEMP",
+    description:
+      "During my work in ZongHa, we developed the GEMP Online System to support the Department of Energy’s Government Energy Management Program (GEMP). The platform enables agencies to report and monitor their energy use efficiently, supporting the DOE’s goal of reducing electricity and fuel consumption by 10%.",
+    tools: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Laravel",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Tailwind Css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Restful API",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: gemp,
+    source_code_link: "https://gemp.doe.gov.ph/",
+    role: [
+      {
+        name: "Frontend Developer",
+        color: "orange-text-gradient",
+      },
+    ],
+  },
+  {
     name: "BeachDay",
     description:
-      "At beachday, we know how challenging it can be to manage daily operations while focusing on growth. That's why we provide highly qualified Operations Strategists to handle essential tasks, allowing clients to maximize their impact. With a commitment to efficiency and excellence, beachday helps businesses Surf through tasks, soak up more free time by ensuring seamless workflows and enhanced productivity.",
+      "During my work at KODA, we developed the Beachday website to showcase how their Operations Strategists help businesses streamline workflows and boost productivity. The platform highlights their commitment to efficiency, allowing clients to focus on growth while enjoying more free time.",
     tools: [
       {
         name: "NextJs",
@@ -219,6 +261,85 @@ const projects = [
     ],
     image: beachday,
     source_code_link: "https://www.beachday.co/home",
+    role: [
+      {
+        name: "Frontend Developer",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "Fountain Crossing",
+    description:
+      "During my work at KODA, we developed the Fountain Crossing website to present their services as an international healthcare staffing agency. The platform highlights their dedication to connecting skilled healthcare professionals with global opportunities, providing clients with dependable and efficient staffing solutions.",
+    tools: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind Css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Restful API",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "GitHub",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fountaincrossing,
+    source_code_link:
+      "https://fountain-crossing-staging.vercel.app/auth/sign-in/applicant",
+    role: [
+      {
+        name: "Frontend Developer",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "EHR Space",
+    description:
+      "During my work at KODA, we developed an EHR Space to provide a secure and efficient digital environment for managing patient health information. The platform supports the creation, access, and sharing of electronic medical records, enabling healthcare providers to improve collaboration, accessibility, and overall patient care.",
+    tools: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind Css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Restful API",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "GitHub",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ehr,
+    source_code_link: "https://ehr-space-website.vercel.app/en/auth/sign-in",
     role: [
       {
         name: "Frontend Developer",

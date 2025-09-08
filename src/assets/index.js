@@ -23,6 +23,9 @@ import upwork from "./company-logo/upwork.png";
 
 //project logo assets
 import beachday from "./client/beachday.png";
+import gemp from "./client/gemp.png";
+import fountaincrossing from "./client/fountain-crossing.png";
+import ehr from "./client/ehr.png";
 
 export {
   upwork,
@@ -44,4 +47,7 @@ export {
   menu,
   close,
   beachday,
+  gemp,
+  fountaincrossing,
+  ehr,
 };

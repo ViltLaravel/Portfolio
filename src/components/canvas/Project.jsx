@@ -13,7 +13,7 @@ export default function ProjectItem({
       onClick={() => window.open(source_code_link, "_blank")}
       className="bg-tertiary p-5 cursor-pointer rounded-2xl flex flex-col gap-3 md:w-[350px] w-full"
     >
-      <div className="relative w-full h-full md:h-[230px]">
+      <div className="relative w-full h-full md:h-[160px]">
         <img src={image} alt={name} className="rounded-xl h-full" />
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
           <div
@@ -40,7 +40,7 @@ export default function ProjectItem({
 
       <div className="mt-5">
         <h3 className="text-white font-bold text-lg md:text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px] h-full min-h-[210px]">
+        <p className="mt-2 text-secondary text-justify text-[14px] h-full min-h-[210px]">
           {description}
         </p>
       </div>
