@@ -26,6 +26,7 @@ import beachday from "./client/beachday.png";
 import gemp from "./client/gemp.png";
 import fountaincrossing from "./client/fountain-crossing.png";
 import ehr from "./client/ehr.png";
+import yep from "./client/yep.png";
 
 export {
   upwork,
@@ -50,4 +51,5 @@ export {
   gemp,
   fountaincrossing,
   ehr,
+  yep,
 };

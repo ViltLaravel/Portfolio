@@ -17,6 +17,7 @@ import {
   gemp,
   fountaincrossing,
   ehr,
+  yep,
 } from "../assets";
 
 import skills_1 from "/skills/skill-1.png";
@@ -343,6 +344,45 @@ const projects = [
     role: [
       {
         name: "Frontend Developer",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "Yep Dev",
+    description:
+      "Through an Upwork project, I contributed to the development of the Yep website, an AI chat-bot platform designed to facilitate fast, intuitive communication powered by intelligent automation. With a focus on clean design and responsive interaction, the site delivers an engaging user experience while empowering clients to connect seamlessly with AI-driven support.",
+    tools: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind Css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Open Router",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Stripe Payment",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "PostgresSQL",
+        color: "green-text-gradient",
+      },
+    ],
+    image: yep,
+    source_code_link: "https://yep-dev-staging.vercel.app/",
+    role: [
+      {
+        name: "Fullstack Developer",
         color: "blue-text-gradient",
       },
     ],
