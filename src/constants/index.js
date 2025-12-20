@@ -225,49 +225,6 @@ const projects = [
     ],
   },
   {
-    name: "BeachDay",
-    description:
-      "During my work at KODA, I contributed to the development of the Beachday website to showcase how their Operations Strategists help businesses streamline workflows and boost productivity. The platform highlights their commitment to efficiency, allowing clients to focus on growth while enjoying more free time.",
-    tools: [
-      {
-        name: "NextJs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind Css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Framer Motion",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Node Mailer",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "Shadcn UI",
-        color: "red-text-gradient",
-      },
-      {
-        name: "Restful API",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: beachday,
-    source_code_link: "https://www.beachday.co/home",
-    role: [
-      {
-        name: "Frontend Developer",
-        color: "blue-text-gradient",
-      },
-    ],
-  },
-  {
     name: "Yep Dev",
     description:
       "Through an Upwork project, I contributed to the development of the Yep website, an AI chat-bot platform designed to facilitate fast, intuitive communication powered by intelligent automation. With a focus on clean design and responsive interaction, the site delivers an engaging user experience while empowering clients to connect seamlessly with AI-driven support.",
