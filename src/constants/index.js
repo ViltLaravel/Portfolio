@@ -214,6 +214,14 @@ const projects = [
         name: "Typescript",
         color: "pink-text-gradient",
       },
+       {
+        name: "XAMPP",
+        color: "orange-text-gradient",
+      },
+       {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
     ],
     image: gemp,
     source_code_link: "https://gemp.doe.gov.ph/",

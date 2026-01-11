@@ -49,7 +49,7 @@ export default function ProjectItem({
         Tools Used :
         {tools.map((tag) => (
           <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-            #{tag.name}
+            {tag.name}
           </p>
         ))}
       </div>
@@ -57,7 +57,7 @@ export default function ProjectItem({
         Role :
         {role.map((tag) => (
           <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-            #{tag.name}
+            {tag.name}
           </p>
         ))}
       </div>
