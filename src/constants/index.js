@@ -162,7 +162,7 @@ const testimonials = [
     designation: "Manager",
     company: "PESO Department",
     image:
-      "https://tse4.mm.bing.net/th?id=OIP.0A1RSeVHV4YfoDGR2jUvHwHaHa&pid=Api&P=0&h=180",
+      "https://api.dicebear.com/9.x/pixel-art/svg?seed=Eliza",
   },
   {
     testimonial:
@@ -171,7 +171,7 @@ const testimonials = [
     designation: "CEO",
     company: "Yaramay Corp",
     image:
-      "https://cdn2.iconfinder.com/data/icons/avatars-99/62/avatar-370-456322-512.png",
+      "https://api.dicebear.com/9.x/pixel-art/svg?seed=Adrian",
   },
   {
     testimonial:
@@ -180,7 +180,26 @@ const testimonials = [
     designation: "Instructor",
     company: "Bohol Island State University",
     image:
-      "https://www.366icons.com/media/01/profile-avatar-account-icon-16699.png",
+      "https://api.dicebear.com/9.x/pixel-art/svg?seed=Liliana",
+  },
+  {
+    testimonial: "Great communication and clear direction. Would be happy to work together again.",
+    name: "Lionel Pinkhard",
+    designation: "Upwork Client",
+    company: "Confidential Project",
+    image: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Nolan",
+  },
+  {
+    testimonial: `Nicole made a strong contribution to the Vespucci front-end project. His role covered both design and implementation work, with a focus on building the core admin interface for the MVP. From the beginning, she approached the engagement with professionalism, clear communication, and a steady understanding of what was required.
+    She handled the Figma design tasks efficiently and produced layouts that matched our Tailwind-based development standards. His approach to spacing, components, and visual hierarchy was consistent and practical, which made translation into code straightforward. The resulting designs were usable, well-structured, and supported fast iteration by the rest of the team.
+    On the implementation side, Nicole demonstrated good technical capability with React and Tailwind. She built reusable components that aligned well with our conventions and showed care in maintaining clarity and consistency. She worked to specification, followed our Ways of Working document, and made adjustments when feedback was provided. His ability to keep work organised and methodical helped keep progress on track even when timelines were tight.
+    One of Nicole’s strengths is her ability to understand the intent behind design and user flow decisions. She asked thoughtful questions, identified potential gaps, and adjusted quickly when priorities shifted. She also showed initiative in improving usability and accessibility where it made sense to do so.
+    Communication was clear and professional throughout. She managed expectations appropriately, kept updates concise, and engaged constructively in technical discussions. She was dependable and worked well within a structured environment, maintaining focus on delivery and quality without overcomplicating the process.
+    Overall, Nicole delivered solid, dependable work across design and front-end implementation. She met the project’s goals, collaborated effectively, and produced results that integrated cleanly with the broader system. I would be happy to recommend her for future work in front-end development or design execution where clarity, discipline, and steady delivery are valued.`,
+    name: "Adam Pease",
+    designation: "Upwork Client",
+    company: "Confidential Project",
+    image: "https://api.dicebear.com/9.x/pixel-art/svg?seed=Emery",
   },
 ];
 
