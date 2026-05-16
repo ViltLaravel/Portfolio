@@ -8,6 +8,9 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Certifications from "./Certifications";
+import Blog from "./Blog";
+import Footer from "./Footer";
 
 export {
   Hero,
@@ -20,4 +23,7 @@ export {
   Contact,
   CanvasLoader,
   StarsCanvas,
+  Certifications,
+  Blog,
+  Footer,
 };

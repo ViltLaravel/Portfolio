@@ -10,6 +10,9 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Certifications,
+  Blog,
+  Footer,
 } from "./components";
 import { ToastContainer } from "react-toastify";
 import { Helmet } from "react-helmet-async";
@@ -62,10 +65,13 @@ const App = () => {
         <Tech />
         <Works />
         <Feedbacks />
+        <Certifications />
+        <Blog />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
         <ToastContainer />
       </div>
     </BrowserRouter>

@@ -35,6 +35,15 @@ export default function Navbar() {
           ))}
         </ul>
 
+        {/* Place your resume as /public/resume.pdf */}
+        <a
+          href="/resume.pdf"
+          download
+          className="hidden md:flex items-center gap-2 bg-[#915EFF] hover:bg-[#7c4de8] text-white text-[14px] font-semibold px-5 py-2 rounded-lg transition-colors duration-200"
+        >
+          Download CV
+        </a>
+
         <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
@@ -63,6 +72,16 @@ export default function Navbar() {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="text-[#915EFF] font-semibold text-[16px]"
+                  onClick={() => setToggle(false)}
+                >
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -37,6 +37,14 @@ export const navLinks = [
     title: "Projects",
   },
   {
+    id: "certifications",
+    title: "Certs",
+  },
+  {
+    id: "blog",
+    title: "Blog",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -292,4 +300,54 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const certifications = [
+  {
+    title: "Advanced Backend Development, API Testing, and Deployment",
+    issuer: "Packt · Coursera",
+    date: "2026",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/records/O0AZFDBZYKUD",
+    color: "#E8273A",
+  },
+  {
+    title: "Introduction to Cloud Computing",
+    issuer: "IBM · Coursera",
+    date: "2026",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/records/H7QDGWGL87JG",
+    color: "#1F70C1",
+  },
+  {
+    title: "Introduction to Software Engineering",
+    issuer: "IBM · Coursera",
+    date: "2026",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/records/HMMH5LTYU9O0",
+    color: "#1F70C1",
+  },
+  {
+    title: "Introduction to Next.js",
+    issuer: "Coursera",
+    date: "2026",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/records/69OOL7W6GKZA",
+    color: "#0056D2",
+  },
+];
+
+const blogs = [
+  {
+    id: 1,
+    title: "From Student to Software Engineer: My First Year in the Industry",
+    excerpt:
+      "I grew up in Bohol, Philippines a place more known for tarsiers and white sand beaches than tech startups. Getting into Computer Science at Bohol Island State University felt like the first bet I placed on myself. I had no senior dev in the family to ask questions, no local tech community to lean on. Just a laptop, a dream, and a lot of Stack Overflow tabs.",
+    date: "May 10, 2025",
+    tag: "Career",
+    readTime: "5 min read",
+    link: "https://dev.to/cog_dev_15/from-student-to-software-engineer-my-first-year-in-the-industry-377",
+    comingSoon: false,
+  },
+  {
+    id: 2,
+    title: "How I Went from Frontend Dev to Managing AWS EC2 and RDS in Production",
+    comingSoon: true,
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, certifications, blogs };
