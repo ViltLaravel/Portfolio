@@ -115,7 +115,7 @@ export default function Hero() {
                 background: "linear-gradient(90deg, transparent 0%, #915EFF 30%, #c084fc 50%, #915EFF 70%, transparent 100%)",
                 backgroundSize: "200% auto",
                 animation: "shimmer 2s linear infinite",
-                clipPath: "polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%)",
+                clipPath: "polygon(6% 0%, 100% 0%, 94% 100%, 0% 100%)",
                 boxShadow: "0 0 12px rgba(145, 94, 255, 0.8)",
               }}
             />

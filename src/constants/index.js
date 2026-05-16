@@ -320,14 +320,14 @@ const certifications = [
     issuer: "IBM · Coursera",
     date: "2026",
     credentialUrl: "https://www.coursera.org/account/accomplishments/records/HMMH5LTYU9O0",
-    color: "#1F70C1",
+    color: "#10B981",
   },
   {
     title: "Introduction to Next.js",
     issuer: "Coursera",
     date: "2026",
     credentialUrl: "https://www.coursera.org/account/accomplishments/records/69OOL7W6GKZA",
-    color: "#0056D2",
+    color: "#F59E0B",
   },
 ];
 
