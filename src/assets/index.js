@@ -27,6 +27,8 @@ import gemp from "./client/gemp.png";
 import fountaincrossing from "./client/fountain-crossing.png";
 import ehr from "./client/ehr.png";
 import yep from "./client/yep.png";
+import faithadmin from "./client/faithadmin.png";
+import vespucci from "./client/vespucci.png";
 
 export {
   upwork,
@@ -52,4 +54,6 @@ export {
   fountaincrossing,
   ehr,
   yep,
+  faithadmin,
+  vespucci,
 };

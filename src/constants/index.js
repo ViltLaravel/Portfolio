@@ -16,6 +16,8 @@ import {
   upwork,
   gemp,
   yep,
+  faithadmin,
+  vespucci,
 } from "../assets";
 
 import skills_1 from "/skills/skill-1.png";
@@ -295,6 +297,64 @@ const projects = [
       {
         name: "Fullstack Developer",
         color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "FaithAdmin",
+    description:
+      "FaithAdmin is a full-featured management platform built for religious organizations, designed to simplify the complexities of running a congregation. It provides administrators with a centralized dashboard to manage member records, track attendance, and coordinate community activities  making day-to-day church operations more organized and less time-consuming.",
+    tools: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: faithadmin,
+    source_code_link: "https://faithadmin.com/",
+    role: [
+      {
+        name: "Fullstack Developer",
+        color: "blue-text-gradient",
+      },
+    ],
+  },
+  {
+    name: "Vespucci",
+    description:
+      "Vespucci is a sleek booking planner and organizer platform crafted to make scheduling and event coordination effortless. Contributed across the full design-to-development pipeline  from shaping the user experience in Figma to building responsive, interactive components. The result is a clean, intuitive interface that keeps users in control of their plans without the clutter.",
+    tools: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TanStack Query",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: vespucci,
+    source_code_link: "https://vespucci-poc-frontend.vercel.app/",
+    role: [
+      {
+        name: "UI/UX Designer",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Frontend Developer",
+        color: "orange-text-gradient",
       },
     ],
   },
