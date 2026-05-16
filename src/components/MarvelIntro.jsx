@@ -31,10 +31,30 @@ export default function MarvelIntro({
 
   const totalPhotos = photos.length;
 
-  const randomPanel = useCallback(() => {
-    const color = PLACEHOLDER_COLORS[Math.floor(Math.random() * PLACEHOLDER_COLORS.length)];
-    const imgIndex = totalPhotos > 0 ? Math.floor(Math.random() * totalPhotos) : -1;
-    return { color, imgIndex };
+  const generateUniqueFrames = useCallback(() => {
+    if (totalPhotos === 0) {
+      return Array(9).fill(null).map(() => ({
+        color: PLACEHOLDER_COLORS[Math.floor(Math.random() * PLACEHOLDER_COLORS.length)],
+        imgIndex: -1,
+      }));
+    }
+
+    // Build shuffled pool, cycling if fewer than 9 photos, so each panel gets a unique index
+    const base = Array.from({ length: totalPhotos }, (_, i) => i);
+    const pool = [];
+    while (pool.length < 9) {
+      const chunk = [...base];
+      for (let i = chunk.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [chunk[i], chunk[j]] = [chunk[j], chunk[i]];
+      }
+      pool.push(...chunk);
+    }
+
+    return Array(9).fill(null).map((_, i) => ({
+      color: PLACEHOLDER_COLORS[Math.floor(Math.random() * PLACEHOLDER_COLORS.length)],
+      imgIndex: pool[i],
+    }));
   }, [totalPhotos]);
 
   const runIntro = useCallback(async () => {
@@ -53,9 +73,7 @@ export default function MarvelIntro({
     for (let i = 0; i < TOTAL_FRAMES; i++) {
       if (cancelRef.current) return;
 
-      setPanelFrames(
-        Array(9).fill(null).map(() => randomPanel())
-      );
+      setPanelFrames(generateUniqueFrames());
 
       // white flash every ~5 frames
       if (i % 5 === 0) {
@@ -106,7 +124,7 @@ export default function MarvelIntro({
     setIsDone(true);
     setPhase("done");
     onComplete?.();
-  }, [phase, randomPanel, titles, onComplete]);
+  }, [phase, generateUniqueFrames, titles, onComplete]);
 
   // Auto-play on mount
   useEffect(() => {

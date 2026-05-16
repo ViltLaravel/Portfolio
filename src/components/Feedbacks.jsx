@@ -9,38 +9,56 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-const FeedbackCard = ({ testimonial, name, designation, company, image }) => (
-  <div className="bg-black-200 p-10 rounded-3xl w-full max-w-[600px] mx-auto">
-    <p className="text-white font-black text-[48px]">"</p>
+const CHAR_LIMIT = 180;
 
-    <div className="mt-1">
-      <p className="text-white tracking-wider text-[18px]">
-        {testimonial}
-      </p>
+const FeedbackCard = ({ testimonial, name, designation, company, image }) => {
+  const [expanded, setExpanded] = useState(false);
+  const isLong = testimonial.length > CHAR_LIMIT;
 
-      <div className="mt-7 flex justify-between items-center gap-1">
-        <div className="flex-1 flex flex-col">
-          <p className="text-white font-medium text-[16px]">
-            <span className="blue-text-gradient">@</span> {name}
+  return (
+    <div className="bg-black-200 p-10 rounded-3xl w-full max-w-[600px] mx-auto flex flex-col min-h-[300px]">
+      <p className="text-white font-black text-[48px]">"</p>
+
+      <div className="mt-1 flex-1 flex flex-col">
+        <div className="flex-1">
+          <p className={`text-white tracking-wider text-[18px] ${!expanded && isLong ? "line-clamp-4" : ""}`}>
+            {testimonial}
           </p>
-          <p className="mt-1 text-secondary text-[12px]">
-            {designation} of {company}
-          </p>
+          {isLong && (
+            <button
+              onClick={(e) => { e.stopPropagation(); setExpanded(!expanded); }}
+              className="mt-2 text-[#915EFF] text-sm hover:underline focus:outline-none transition-colors"
+            >
+              {expanded ? "Read Less ↑" : "Read More ↓"}
+            </button>
+          )}
         </div>
 
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
-        />
+        <div className="mt-auto pt-7 flex justify-between items-center gap-1">
+          <div className="flex-1 flex flex-col">
+            <p className="text-white font-medium text-[16px]">
+              <span className="blue-text-gradient">@</span> {name}
+            </p>
+            <p className="mt-1 text-secondary text-[12px]">
+              {designation} of {company}
+            </p>
+          </div>
+
+          <img
+            src={image}
+            alt={`feedback_by-${name}`}
+            className="w-10 h-10 rounded-full object-cover"
+          />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Feedbacks = () => {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [isPaused, setIsPaused] = useState(false);
   const total = testimonials.length;
 
   const goTo = useCallback(
@@ -55,9 +73,10 @@ const Feedbacks = () => {
   const next = useCallback(() => goTo(current + 1, 1), [current, goTo]);
 
   useEffect(() => {
+    if (isPaused) return;
     const timer = setInterval(next, 5000);
     return () => clearInterval(timer);
-  }, [next]);
+  }, [next, isPaused]);
 
   const variants = {
     enter: (dir) => ({
@@ -89,12 +108,9 @@ const Feedbacks = () => {
         <motion.div
           variants={fadeIn("", "spring", 0.3, 0.75)}
           className="relative flex flex-col items-center"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
         >
-          {/*
-            KEY FIX: `layout` on this wrapper tells Framer Motion to
-            smoothly animate height whenever the inner card content
-            changes size — no fixed height needed.
-          */}
           <motion.div
             layout
             className="w-full max-w-[640px] overflow-hidden"
